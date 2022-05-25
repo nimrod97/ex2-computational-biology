@@ -3,6 +3,7 @@ from darwin_genetic_algorithm import DarwinGeneticAlgorithm
 from lemark_genetic_algorithm import LemarkGeneticAlgorithm
 import tkinter as tk
 from tkinter import filedialog
+import time
 
 if __name__ == '__main__':
     print("choose input file with the correct format")
@@ -33,3 +34,4 @@ if __name__ == '__main__':
     matrices, constraints_list, immutable_positions = genetic_algorithm.generate_boards(num_of_boards)
     sol = genetic_algorithm.solve(matrices, constraints_list, immutable_positions)
     print(sol)
+    time.sleep(2)
